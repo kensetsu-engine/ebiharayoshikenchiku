@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用情報 | 有限会社海老原芳建築 | 栃木県下野市</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#C49A3C;--gold-l:#D4AA50;--gold-d:#9A7828;--brown:#3D2B1F;--brown-d:#271A10;--black:#0E0E0E;--charcoal:#1A1410;--iron:#2C2218;--silver:#8A7E72;--silver-l:#B8A898;--silver-p:#E8E0D5;--cream:#F4F0EA;--white:#FFFDF8;--border:rgba(196,154,60,0.22)}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
+.fade-up.visible{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(20,14,10,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;gap:2px}
+.logo-en{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--gold);letter-spacing:.12em}
+.logo-ja{font-size:10px;color:var(--silver-l);letter-spacing:.18em}
+.logo-bar{width:32px;height:2px;background:var(--gold);margin-top:4px}
+nav.pc-nav{display:flex;gap:0}
+nav.pc-nav a{font-size:12px;color:rgba(255,255,255,0.7);padding:8px 12px;border-radius:2px;letter-spacing:.06em;transition:color .2s,background .2s;white-space:nowrap}
+nav.pc-nav a:hover,nav.pc-nav a.active{color:var(--gold);background:rgba(196,154,60,0.1)}
+.header-cta{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.header-tel{font-family:'Oswald',sans-serif;font-size:17px;color:var(--white);letter-spacing:.06em;line-height:1}
+.header-tel span{font-size:10px;font-family:'Noto Sans JP',sans-serif;display:block;color:var(--silver-l);letter-spacing:.1em;margin-bottom:2px}
+.btn-primary{background:var(--gold);color:var(--black);font-size:12px;font-weight:700;padding:10px 18px;border-radius:2px;letter-spacing:.08em;transition:background .2s;white-space:nowrap}
+.btn-primary:hover{background:var(--gold-l)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,7,4,.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:18px;color:var(--white);letter-spacing:.12em;transition:color .2s}
+.mobile-nav a:hover{color:var(--gold)}
+.page-hero{margin-top:72px;background:linear-gradient(135deg,var(--brown-d) 0%,#1c1008 100%);padding:80px 24px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(196,154,60,0.1) 1px,transparent 1px);background-size:32px 32px}
+.page-hero-inner{max-width:1160px;margin:0 auto;position:relative}
+.page-hero-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.page-hero-label::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+.page-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,4vw,48px);color:var(--white);font-weight:700;margin-bottom:12px}
+.page-hero-sub{font-size:15px;color:rgba(255,255,255,0.6)}
+.breadcrumb{margin-top:24px;display:flex;gap:8px;align-items:center}
+.breadcrumb a,.breadcrumb span{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:.05em;transition:color .2s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb .sep{color:rgba(255,255,255,0.2)}
+.section{padding:96px 24px}
+.section.bg-cream{background:var(--cream)}
+.section-inner{max-width:1160px;margin:0 auto}
+.section-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+.section-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,2.5vw,34px);color:var(--charcoal);font-weight:700;margin-bottom:12px}
+.section-title.white{color:var(--white)}
+.section-desc{font-size:15px;color:var(--silver);line-height:1.9;margin-bottom:48px}
+/* APPEAL */
+.appeal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:0}
+.appeal-card{background:var(--iron);padding:36px 28px}
+.appeal-num{font-family:'Oswald',sans-serif;font-size:32px;font-weight:700;color:var(--gold-d);opacity:.7;margin-bottom:12px}
+.appeal-icon{font-size:28px;margin-bottom:12px}
+.appeal-title{font-family:'Noto Serif JP',serif;font-size:16px;color:var(--white);font-weight:700;margin-bottom:10px}
+.appeal-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.9}
+/* JOB CARDS */
+.job-cards{display:flex;flex-direction:column;gap:2px;margin-top:48px}
+.job-card{background:var(--cream);border-left:4px solid var(--gold)}
+.job-card-header{padding:28px 32px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.job-card-header:hover{background:rgba(196,154,60,.06)}
+.job-card-tag{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--gold);margin-bottom:6px}
+.job-card-title{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;color:var(--charcoal)}
+.job-card-toggle{font-size:22px;color:var(--gold);transition:transform .3s}
+.job-card-toggle.open{transform:rotate(45deg)}
+.job-card-body{padding:0 32px;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
+.job-card-body.open{max-height:600px;padding:0 32px 32px}
+.job-table{width:100%;border-collapse:collapse}
+.job-table tr{border-bottom:1px solid rgba(0,0,0,.07)}
+.job-table th{font-size:12px;font-weight:700;color:var(--charcoal);width:140px;padding:14px 0;vertical-align:top}
+.job-table td{font-size:13px;color:var(--silver);padding:14px 12px;line-height:1.8}
+/* WELFARE */
+.welfare-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:48px}
+.welfare-card{background:var(--cream);padding:28px 22px;text-align:center}
+.welfare-icon{font-size:28px;margin-bottom:12px}
+.welfare-title{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--charcoal);font-weight:700;margin-bottom:8px}
+.welfare-desc{font-size:12px;color:var(--silver);line-height:1.8}
+/* FLOW */
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;position:relative;margin-top:48px}
+.flow-grid::before{content:'';position:absolute;top:36px;left:12%;right:12%;height:1px;background:linear-gradient(to right,transparent,var(--border),var(--border),transparent)}
+.flow-step{text-align:center;position:relative}
+.flow-num{width:72px;height:72px;border-radius:50%;border:2px solid var(--gold);background:var(--black);color:var(--gold);font-family:'Oswald',sans-serif;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;position:relative;z-index:1}
+.flow-title{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--charcoal);font-weight:700;margin-bottom:8px}
+.flow-desc{font-size:12px;color:var(--silver);line-height:1.85}
+/* STORY BANNER */
+.story-banner{background:var(--charcoal);padding:72px 24px;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.story-banner h2{font-family:'Noto Serif JP',serif;font-size:clamp(20px,2.5vw,28px);color:var(--white);font-weight:700;margin-bottom:12px}
+.story-banner p{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:28px;line-height:1.8}
+.btn-gold{background:var(--gold);color:var(--black);font-size:13px;font-weight:700;padding:14px 36px;border-radius:2px;letter-spacing:.1em;transition:background .2s}
+.btn-gold:hover{background:var(--gold-l)}
+/* ENTRY CTA */
+.entry-cta{background:var(--brown-d);padding:80px 24px;text-align:center}
+.entry-cta h2{font-family:'Noto Serif JP',serif;font-size:clamp(22px,2.5vw,32px);color:var(--white);margin-bottom:16px;font-weight:700}
+.entry-cta p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:36px;line-height:1.8}
+.btn-entry{background:var(--gold);color:var(--black);font-size:15px;font-weight:700;padding:18px 48px;border-radius:2px;letter-spacing:.1em;display:inline-block;transition:background .2s,transform .15s}
+.btn-entry:hover{background:var(--gold-l);transform:translateY(-2px)}
+footer{background:var(--black);border-top:1px solid var(--border);padding:72px 24px 40px}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:56px}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.45);line-height:2;margin:16px 0 20px}
+address.footer-address{font-size:12px;color:rgba(255,255,255,.4);line-height:2;font-style:normal}
+.footer-col-title{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.25em;color:var(--gold);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.45);transition:color .2s;letter-spacing:.04em}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.25);letter-spacing:.06em}
+@media(max-width:1024px){nav.pc-nav{display:none}.header-tel{display:none}.hamburger{display:flex}.appeal-grid{grid-template-columns:1fr 1fr}.welfare-grid{grid-template-columns:1fr 1fr}.flow-grid{grid-template-columns:repeat(2,1fr);gap:32px}.flow-grid::before{display:none}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:640px){.appeal-grid{grid-template-columns:1fr}.welfare-grid{grid-template-columns:1fr 1fr}.flow-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-en">EBIHARAYOSHI KENCHIKU</span><span class="logo-ja">有限会社 海老原芳建築</span><span class="logo-bar"></span></a>
+    <nav class="pc-nav">
+      <a href="service.html">施工案内</a><a href="works.html">施工実績</a><a href="company.html">会社概要</a><a href="recruit.html" class="active">採用情報</a><a href="recruit_story.html">求職者のみなさまへ</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:0285441064" class="header-tel"><span>お気軽にご相談ください</span>0285-44-1064</a>
+      <a href="contact.html" class="btn-primary">無料相談</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="service.html" onclick="closeMenu()">施工案内</a><a href="works.html" onclick="closeMenu()">施工実績</a><a href="company.html" onclick="closeMenu()">会社概要</a><a href="recruit.html" onclick="closeMenu()">採用情報</a><a href="recruit_story.html" onclick="closeMenu()">求職者のみなさまへ</a><a href="contact.html" onclick="closeMenu()">お問い合わせ</a>
+  <a href="tel:0285441064" style="color:var(--gold);font-family:'Oswald',sans-serif;font-size:22px;">0285-44-1064</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">RECRUIT</div>
+    <h1>採用情報</h1>
+    <p class="page-hero-sub">栃木の住まいを支える仕事。一緒に働きませんか</p>
+    <nav class="breadcrumb"><a href="index.html">TOP</a><span class="sep">›</span><span>採用情報</span></nav>
+  </div>
+</section>
+
+<!-- APPEAL -->
+<section style="background:var(--charcoal);padding:96px 24px">
+  <div class="section-inner">
+    <div class="section-label" style="color:var(--gold)">WHY JOIN US</div>
+    <h2 class="section-title white" style="margin-bottom:12px">ここで働く魅力</h2>
+    <p class="section-desc" style="color:rgba(255,255,255,.55);margin-bottom:48px">施工管理技士・2級建築士在籍の本格的な建築会社で、確かなスキルを身につけませんか。</p>
+    <div class="appeal-grid">
+      <div class="appeal-card fade-up"><div class="appeal-num">01</div><div class="appeal-icon">📐</div><div class="appeal-title">資格取得を全力支援</div><div class="appeal-desc">施工管理技士・建築士などの資格取得を会社が全力でサポート。受験費用補助制度もあります。</div></div>
+      <div class="appeal-card fade-up d1"><div class="appeal-num">02</div><div class="appeal-icon">🏡</div><div class="appeal-title">地元・栃木で長く働ける</div><div class="appeal-desc">転勤なし。栃木県下野市を拠点に、地元で腰を据えて働ける環境です。地域に貢献できるやりがいがあります。</div></div>
+      <div class="appeal-card fade-up d2"><div class="appeal-num">03</div><div class="appeal-icon">👷</div><div class="appeal-title">先輩職人から学べる現場</div><div class="appeal-desc">経験豊富な職人20名が在籍。OJTで技術を着実に吸収できる職場環境です。未経験者も安心して働けます。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOB LISTINGS -->
+<section class="section bg-cream">
+  <div class="section-inner">
+    <div class="section-label">JOB OPENINGS</div>
+    <h2 class="section-title">募集職種</h2>
+    <p class="section-desc">現在、以下の職種で仲間を募集しています。</p>
+    <div class="job-cards">
+      <div class="job-card fade-up">
+        <div class="job-card-header" onclick="toggleJob(this)">
+          <div><div class="job-card-tag">CARPENTER / BUILDER</div><div class="job-card-title">大工・建築職人</div></div>
+          <div class="job-card-toggle">+</div>
+        </div>
+        <div class="job-card-body">
+          <table class="job-table">
+            <tr><th>雇用形態</th><td>正社員（試用期間3ヶ月）</td></tr>
+            <tr><th>給与</th><td>月給 230,000円〜 ／ 経験・スキルにより優遇</td></tr>
+            <tr><th>勤務地</th><td>栃木県下野市およびその周辺（転勤なし）</td></tr>
+            <tr><th>勤務時間</th><td>8:00〜17:00（土日祝休み ／ 現場によって異なる場合あり）</td></tr>
+            <tr><th>応募資格</th><td>未経験可（要普通免許）。建築系の経験・資格があれば優遇</td></tr>
+            <tr><th>福利厚生</th><td>社会保険完備・労災保険・資格取得支援・制服支給</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="job-card fade-up d1">
+        <div class="job-card-header" onclick="toggleJob(this)">
+          <div><div class="job-card-tag">SITE MANAGER</div><div class="job-card-title">施工管理・現場監督</div></div>
+          <div class="job-card-toggle">+</div>
+        </div>
+        <div class="job-card-body">
+          <table class="job-table">
+            <tr><th>雇用形態</th><td>正社員（試用期間3ヶ月）</td></tr>
+            <tr><th>給与</th><td>月給 280,000円〜 ／ 資格・経験により大幅優遇</td></tr>
+            <tr><th>勤務地</th><td>栃木県下野市およびその周辺（転勤なし）</td></tr>
+            <tr><th>勤務時間</th><td>8:00〜17:00</td></tr>
+            <tr><th>応募資格</th><td>施工管理技士（2級以上）優遇。建築・土木系大学・専門卒も歓迎</td></tr>
+            <tr><th>福利厚生</th><td>社会保険完備・資格手当・資格取得支援制度</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="job-card fade-up d2">
+        <div class="job-card-header" onclick="toggleJob(this)">
+          <div><div class="job-card-tag">OFFICE STAFF</div><div class="job-card-title">事務スタッフ</div></div>
+          <div class="job-card-toggle">+</div>
+        </div>
+        <div class="job-card-body">
+          <table class="job-table">
+            <tr><th>雇用形態</th><td>正社員・パート（応相談）</td></tr>
+            <tr><th>給与</th><td>月給 180,000円〜 ／ パート時給 1,000円〜</td></tr>
+            <tr><th>勤務地</th><td>栃木県下野市緑１−３−３（本社）</td></tr>
+            <tr><th>勤務時間</th><td>8:30〜17:00（土日祝休み）</td></tr>
+            <tr><th>応募資格</th><td>要PC基本スキル（Word・Excel）。建設業の経理経験あれば尚可</td></tr>
+            <tr><th>福利厚生</th><td>社会保険完備・交通費支給・育児休暇取得実績あり</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WELFARE -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">WELFARE</div>
+    <h2 class="section-title">福利厚生・職場環境</h2>
+    <div class="welfare-grid">
+      <div class="welfare-card fade-up"><div class="welfare-icon">🏥</div><div class="welfare-title">社会保険完備</div><div class="welfare-desc">健康保険・厚生年金・雇用保険・労災保険すべて完備</div></div>
+      <div class="welfare-card fade-up d1"><div class="welfare-icon">📚</div><div class="welfare-title">資格取得支援</div><div class="welfare-desc">受験費用補助・勉強時間の考慮など資格取得を会社が応援</div></div>
+      <div class="welfare-card fade-up d2"><div class="welfare-icon">👕</div><div class="welfare-title">制服・道具支給</div><div class="welfare-desc">作業服・安全靴・基本工具は会社が支給します</div></div>
+      <div class="welfare-card fade-up d3"><div class="welfare-icon">🏠</div><div class="welfare-title">転勤なし</div><div class="welfare-desc">栃木県内の現場が中心。地元で長く腰を据えて働けます</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="section bg-cream">
+  <div class="section-inner">
+    <div class="section-label">RECRUIT FLOW</div>
+    <h2 class="section-title">採用の流れ</h2>
+    <div class="flow-grid">
+      <div class="flow-step fade-up"><div class="flow-num">01</div><div class="flow-title">エントリー</div><div class="flow-desc">フォームまたはお電話にてご応募ください</div></div>
+      <div class="flow-step fade-up d1"><div class="flow-num">02</div><div class="flow-title">書類選考</div><div class="flow-desc">応募書類をもとに選考。1週間以内にご連絡します</div></div>
+      <div class="flow-step fade-up d2"><div class="flow-num">03</div><div class="flow-title">面接（1〜2回）</div><div class="flow-desc">代表・現場責任者との面談。現場見学も可能です</div></div>
+      <div class="flow-step fade-up d3"><div class="flow-num">04</div><div class="flow-title">内定・入社</div><div class="flow-desc">入社日はご相談の上決定。丁寧にオンボーディングします</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY BANNER -->
+<div class="story-banner">
+  <h2>私たちの仕事・思いをもっと知りたい方へ</h2>
+  <p>海老原芳建築で働くということ。代表の想い、職人の日常、キャリアの歩み方をじっくりお伝えします。</p>
+  <a href="recruit_story.html" class="btn-gold">求職者のみなさまへ →</a>
+</div>
+
+<!-- ENTRY CTA -->
+<section class="entry-cta">
+  <h2>一緒に、栃木の住まいを守っていきませんか</h2>
+  <p>まずはお気軽にエントリーまたはお問い合わせください。<br>見学・体験入社も歓迎しています。</p>
+  <a href="contact.html" class="btn-entry">エントリー・お問い合わせ</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:0"><span class="logo-en">EBIHARAYOSHI KENCHIKU</span><span class="logo-ja">有限会社 海老原芳建築</span><span class="logo-bar"></span></a>
+        <p class="footer-desc">栃木県下野市を拠点に、新築・増改築・リフォーム・店舗建築など一般建築工事全般に対応。</p>
+        <address class="footer-address">〒329-0433 栃木県下野市緑１−３−３<br>TEL: 0285-44-1064　代表者: 海老原 俊夫</address>
+      </div>
+      <div>
+        <div class="footer-col-title">SERVICES</div>
+        <ul class="footer-links">
+          <li><a href="service.html">新築工事</a></li><li><a href="service.html">増改築・リフォーム</a></li><li><a href="service.html">店舗・商業施設</a></li><li><a href="service.html">外構・エクステリア</a></li><li><a href="service.html">解体・土工事</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">PAGES</div>
+        <ul class="footer-links">
+          <li><a href="index.html">TOP</a></li><li><a href="service.html">施工案内</a></li><li><a href="works.html">施工実績</a></li><li><a href="company.html">会社概要</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="recruit_story.html">求職者のみなさまへ</a></li><li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 有限会社海老原芳建築. All Rights Reserved.</p>
+      <p class="footer-copy">〒329-0433 栃木県下野市緑１−３−３</p>
+    </div>
+  </div>
+</footer>
+<script>
+const ham=document.getElementById('hamburger');const mNav=document.getElementById('mobileNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mNav.classList.toggle('open');document.body.style.overflow=mNav.classList.contains('open')?'hidden':''});
+function closeMenu(){ham.classList.remove('open');mNav.classList.remove('open');document.body.style.overflow=''}
+const obs=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+function toggleJob(header){
+  const body=header.nextElementSibling;
+  const toggle=header.querySelector('.job-card-toggle');
+  body.classList.toggle('open');
+  toggle.classList.toggle('open');
+}
+</script>
+</body>
+</html>

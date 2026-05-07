@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>求職者のみなさまへ | 有限会社海老原芳建築 | 栃木県下野市</title>
+<meta name="description" content="積み上げてきた、この手の誇り。家族の家を、手で作る仕事。30年後も残るものを、今日も作っている。海老原芳建築で働くということ。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & ROOT ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#C49A3C;--gold-l:#D4AA50;--gold-d:#9A7828;
+  --brown:#3D2B1F;--brown-d:#271A10;--brown-l:#5C4030;
+  --black:#0E0E0E;--charcoal:#1A1410;--iron:#2C2218;
+  --silver:#8A7E72;--silver-l:#B8A898;
+  --cream:#F4F0EA;--white:#FFFDF8;
+  --border:rgba(196,154,60,0.22);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal-left.visible{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal-right.visible{opacity:1;transform:none}
+.d1{transition-delay:.15s}.d2{transition-delay:.3s}.d3{transition-delay:.45s}.d4{transition-delay:.6s}
+
+/* ===== HEADER ===== */
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(20,14,10,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;gap:2px}
+.logo-en{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--gold);letter-spacing:.12em}
+.logo-ja{font-size:10px;color:var(--silver-l);letter-spacing:.18em}
+.logo-bar{width:32px;height:2px;background:var(--gold);margin-top:4px}
+nav.pc-nav{display:flex;gap:0}
+nav.pc-nav a{font-size:12px;color:rgba(255,255,255,0.7);padding:8px 12px;border-radius:2px;letter-spacing:.06em;transition:color .2s,background .2s;white-space:nowrap}
+nav.pc-nav a:hover,nav.pc-nav a.active{color:var(--gold);background:rgba(196,154,60,0.1)}
+.header-cta{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.header-tel{font-family:'Oswald',sans-serif;font-size:17px;color:var(--white);letter-spacing:.06em;line-height:1}
+.header-tel span{font-size:10px;font-family:'Noto Sans JP',sans-serif;display:block;color:var(--silver-l);letter-spacing:.1em;margin-bottom:2px}
+.btn-primary{background:var(--gold);color:var(--black);font-size:12px;font-weight:700;padding:10px 18px;border-radius:2px;letter-spacing:.08em;transition:background .2s;white-space:nowrap}
+.btn-primary:hover{background:var(--gold-l)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,7,4,.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:18px;color:var(--white);letter-spacing:.12em;transition:color .2s}
+.mobile-nav a:hover{color:var(--gold)}
+
+/* ===== HERO ===== */
+.story-hero{margin-top:72px;position:relative;min-height:100vh;background:var(--brown-d);display:flex;align-items:center;overflow:hidden}
+.story-hero-bg{position:absolute;inset:0}
+.story-hero-img{width:100%;height:100%;object-fit:cover;opacity:.3}
+.story-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,10,5,.5) 0%,rgba(20,10,5,.85) 100%)}
+.story-hero-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:120px 24px 100px;text-align:center}
+.story-hero-eyebrow{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.5em;color:var(--gold);margin-bottom:32px;display:flex;align-items:center;justify-content:center;gap:16px}
+.story-hero-eyebrow::before,.story-hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--gold)}
+.story-hero-title{font-family:'Shippori Mincho',serif;font-size:clamp(36px,6vw,80px);color:var(--white);font-weight:800;line-height:1.25;margin-bottom:40px;text-shadow:0 4px 40px rgba(0,0,0,.6);letter-spacing:.04em}
+.story-hero-title em{color:var(--gold);font-style:normal;display:block}
+.story-hero-sub{font-family:'Noto Serif JP',serif;font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.7);line-height:2;max-width:640px;margin:0 auto 48px}
+.story-hero-scroll{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:60px}
+.story-hero-scroll span{font-family:'Oswald',sans-serif;font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.3em}
+.scroll-bar{width:1px;height:60px;background:linear-gradient(to bottom,rgba(196,154,60,.8),transparent);animation:scrollLine 2s ease-in-out infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar{position:fixed;top:72px;left:0;right:0;height:3px;background:rgba(255,255,255,.1);z-index:999}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .1s}
+
+/* ===== CHAPTER DIVIDER ===== */
+.chapter{padding:0 24px;text-align:center;position:relative}
+.chapter-num{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.5em;color:var(--gold);margin-bottom:16px;display:block}
+.chapter-title{font-family:'Shippori Mincho',serif;font-size:clamp(24px,4vw,48px);color:var(--charcoal);font-weight:700;line-height:1.4;margin-bottom:0}
+.chapter-title.white{color:var(--white)}
+.chapter-line{width:1px;height:80px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:32px auto 0}
+
+/* ===== TEXT SECTIONS ===== */
+.story-section{padding:96px 24px}
+.story-section.dark{background:var(--charcoal)}
+.story-section.cream{background:var(--cream)}
+.story-inner{max-width:760px;margin:0 auto}
+.story-inner.wide{max-width:1100px}
+.story-lead{font-family:'Shippori Mincho',serif;font-size:clamp(20px,2.5vw,30px);color:var(--charcoal);font-weight:700;line-height:1.7;margin-bottom:40px;letter-spacing:.04em}
+.story-lead.white{color:var(--white)}
+.story-body{font-size:15px;color:var(--silver);line-height:2.3;margin-bottom:28px}
+.story-body.white{color:rgba(255,255,255,.65)}
+.story-body strong{color:var(--charcoal);font-weight:700}
+.story-body.white strong{color:var(--white)}
+.story-quote{margin:48px 0;padding:40px 48px;background:var(--cream);border-left:3px solid var(--gold);position:relative}
+.story-quote.dark-bg{background:var(--iron)}
+.story-quote::before{content:'"';font-family:'Shippori Mincho',serif;font-size:80px;color:var(--gold);opacity:.3;position:absolute;top:0px;left:24px;line-height:1}
+.story-quote-text{font-family:'Shippori Mincho',serif;font-size:clamp(17px,2vw,22px);color:var(--charcoal);line-height:1.8;font-weight:600;position:relative;z-index:1}
+.story-quote-text.white{color:var(--white)}
+.story-quote-author{font-size:12px;color:var(--silver);margin-top:16px;letter-spacing:.1em;font-family:'Oswald',sans-serif}
+
+/* ===== PHOTO PLACEHOLDER ===== */
+.photo-block{margin:48px 0}
+.photo-ph{width:100%;background:#d0c8bc;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:#8a7e72;font-size:13px;letter-spacing:.1em}
+.photo-ph.tall{height:520px}
+.photo-ph.medium{height:360px}
+.photo-ph.wide{height:460px}
+.photo-ph-icon{font-size:36px;opacity:.4}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin:48px 0}
+.photo-grid-item{background:#d0c8bc;height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#8a7e72;font-size:12px;letter-spacing:.1em}
+.photo-grid-item-icon{font-size:28px;opacity:.4}
+
+/* ===== KEYWORD SECTION ===== */
+.keyword-section{padding:80px 24px;background:var(--black);text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.keyword-grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;max-width:900px;margin:40px auto 0}
+.keyword-tag{font-family:'Shippori Mincho',serif;font-size:clamp(14px,1.8vw,18px);color:rgba(255,255,255,.5);padding:10px 24px;border:1px solid rgba(196,154,60,.2);letter-spacing:.06em;transition:color .3s,border-color .3s}
+.keyword-tag:hover{color:var(--gold);border-color:var(--gold)}
+
+/* ===== NUMBERS SECTION ===== */
+.numbers-section{padding:96px 24px;background:var(--iron)}
+.numbers-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;max-width:1000px;margin:56px auto 0}
+.number-card{background:rgba(255,255,255,.03);padding:44px 24px;text-align:center;border-top:2px solid transparent;transition:border-color .3s}
+.number-card:hover{border-color:var(--gold)}
+.number-val{font-family:'Oswald',sans-serif;font-size:clamp(40px,5vw,60px);font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
+.number-val small{font-size:.45em}
+.number-label{font-size:12px;color:rgba(255,255,255,.45);line-height:1.8;letter-spacing:.06em}
+
+/* ===== VOICE / INTERVIEW ===== */
+.interview-section{padding:96px 24px}
+.interview-inner{max-width:900px;margin:0 auto}
+.interview-block{display:grid;grid-template-columns:1fr 2fr;gap:60px;align-items:start;margin-top:64px;padding-top:64px;border-top:1px solid rgba(0,0,0,.08)}
+.interview-block:first-child{margin-top:0;padding-top:0;border-top:none}
+.interview-photo{background:#d0c8bc;height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#8a7e72;font-size:12px}
+.interview-photo-icon{font-size:32px;opacity:.4}
+.interview-name{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:var(--charcoal);margin-bottom:4px}
+.interview-role{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--gold);margin-bottom:20px}
+.interview-q{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:10px;letter-spacing:.06em}
+.interview-a{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--silver);line-height:2.1;margin-bottom:24px}
+
+/* ===== TIMELINE ===== */
+.timeline-section{padding:96px 24px;background:var(--cream)}
+.timeline{max-width:700px;margin:56px auto 0;position:relative}
+.timeline::before{content:'';position:absolute;left:40px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--border) 5%,var(--border) 95%,transparent)}
+.timeline-item{display:flex;gap:40px;margin-bottom:56px;position:relative}
+.timeline-dot{width:80px;height:80px;flex-shrink:0;background:var(--charcoal);border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.timeline-dot-year{font-family:'Oswald',sans-serif;font-size:11px;color:var(--gold);letter-spacing:.1em;text-align:center;line-height:1.4}
+.timeline-content{padding-top:16px}
+.timeline-title{font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:var(--charcoal);margin-bottom:10px}
+.timeline-text{font-size:13px;color:var(--silver);line-height:1.9}
+
+/* ===== ENTRY CTA ===== */
+.entry-cta{background:var(--brown-d);padding:120px 24px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--border)}
+.entry-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(196,154,60,.1) 0%,transparent 65%)}
+.entry-cta-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.5em;color:var(--gold);margin-bottom:24px;position:relative}
+.entry-cta-title{font-family:'Shippori Mincho',serif;font-size:clamp(26px,4vw,48px);color:var(--white);font-weight:700;line-height:1.5;margin-bottom:20px;position:relative}
+.entry-cta-sub{font-size:15px;color:rgba(255,255,255,.6);line-height:1.9;margin-bottom:52px;position:relative}
+.entry-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.btn-entry-main{background:var(--gold);color:var(--black);font-size:15px;font-weight:700;padding:18px 52px;border-radius:2px;letter-spacing:.1em;transition:background .2s,transform .15s;display:inline-block}
+.btn-entry-main:hover{background:var(--gold-l);transform:translateY(-2px)}
+.btn-entry-sub{border:1px solid rgba(255,255,255,.35);color:var(--white);font-size:14px;padding:17px 40px;border-radius:2px;letter-spacing:.1em;transition:border-color .2s,background .2s;display:inline-block}
+.btn-entry-sub:hover{border-color:var(--gold);background:rgba(196,154,60,.1)}
+.entry-tel{font-family:'Oswald',sans-serif;font-size:clamp(32px,5vw,52px);color:var(--gold);display:block;letter-spacing:.08em;margin-bottom:6px;position:relative;transition:color .2s}
+.entry-tel:hover{color:var(--gold-l)}
+.entry-tel-label{font-size:12px;color:rgba(255,255,255,.35);position:relative;letter-spacing:.1em}
+
+/* ===== FOOTER ===== */
+footer{background:var(--black);border-top:1px solid var(--border);padding:72px 24px 40px}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:56px}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.45);line-height:2;margin:16px 0 20px}
+address.footer-address{font-size:12px;color:rgba(255,255,255,.4);line-height:2;font-style:normal}
+.footer-col-title{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.25em;color:var(--gold);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.45);transition:color .2s;letter-spacing:.04em}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.25);letter-spacing:.06em}
+
+/* ===== SECTION SEPARATOR ===== */
+.gold-sep{width:48px;height:2px;background:var(--gold);margin:40px auto}
+.gold-sep.left{margin:40px 0}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){nav.pc-nav{display:none}.header-tel{display:none}.hamburger{display:flex}.numbers-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:768px){.interview-block{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr}.story-quote{padding:28px 24px}}
+@media(max-width:640px){.numbers-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.entry-cta-btns{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-en">EBIHARAYOSHI KENCHIKU</span>
+      <span class="logo-ja">有限会社 海老原芳建築</span>
+      <span class="logo-bar"></span>
+    </a>
+    <nav class="pc-nav">
+      <a href="service.html">施工案内</a>
+      <a href="works.html">施工実績</a>
+      <a href="company.html">会社概要</a>
+      <a href="recruit.html">採用情報</a>
+      <a href="recruit_story.html" class="active">求職者のみなさまへ</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:0285441064" class="header-tel"><span>採用お問い合わせ</span>0285-44-1064</a>
+      <a href="contact.html" class="btn-primary">エントリー</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="service.html" onclick="closeMenu()">施工案内</a>
+  <a href="works.html" onclick="closeMenu()">施工実績</a>
+  <a href="company.html" onclick="closeMenu()">会社概要</a>
+  <a href="recruit.html" onclick="closeMenu()">採用情報</a>
+  <a href="recruit_story.html" onclick="closeMenu()">求職者のみなさまへ</a>
+  <a href="contact.html" onclick="closeMenu()">お問い合わせ</a>
+  <a href="tel:0285441064" style="color:var(--gold);font-family:'Oswald',sans-serif;font-size:22px;">0285-44-1064</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="story-hero">
+  <div class="story-hero-bg">
+    <img class="story-hero-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80" alt="建築現場">
+    <div class="story-hero-overlay"></div>
+  </div>
+  <div class="story-hero-inner">
+    <div class="story-hero-eyebrow reveal">FOR JOB SEEKERS — 求職者のみなさまへ</div>
+    <h1 class="story-hero-title reveal d1">
+      積み上げてきた、<br>この手の誇り。<br>
+      <em>家族の家を、手で作る仕事。</em>
+    </h1>
+    <p class="story-hero-sub reveal d2">
+      「30年後も残るものを、今日も作っている。」<br>
+      有限会社海老原芳建築で働くということ——<br>
+      その意味と誇りを、ここに綴ります。
+    </p>
+    <div class="story-hero-scroll reveal d3">
+      <span>SCROLL</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHAPTER 1 opener ===== -->
+<div style="padding:96px 24px 56px;text-align:center;background:var(--white)">
+  <div class="chapter reveal">
+    <span class="chapter-num">CHAPTER 01</span>
+    <h2 class="chapter-title">積み上げてきた、この手の誇り。</h2>
+    <div class="chapter-line"></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 1: 職人の手 ===== -->
+<section class="story-section">
+  <div class="story-inner">
+    <div class="photo-block reveal">
+      <div class="photo-ph tall"><div class="photo-ph-icon">🔨</div>職人の手元写真（準備中）</div>
+    </div>
+    <p class="story-lead reveal">
+      木材の匂い、ノミが走る音、<br>完成した瞬間の静けさ。
+    </p>
+    <p class="story-body reveal">
+      海老原芳建築には今、<strong>施工管理技士6名・2級建築士6名</strong>が在籍しています。彼らはある日突然そこにいたわけではない。それぞれが現場に立ち、失敗し、学び、技術を身につけてきた。その積み上げの重さが、今日この会社を支えています。
+    </p>
+    <p class="story-body reveal">
+      建築の仕事は、誤魔化しがきかない。壁の中に隠れてしまう部分こそ、丁寧に仕事をする。見えなくなるからこそ、見えているつもりで作る。それが職人というものです。海老原芳建築の職人たちは、<strong>「まじめで愚直、でも臨機応変に」</strong>——そんな言葉で仕事をしています。
+    </p>
+    <div class="story-quote reveal">
+      <p class="story-quote-text">「見えなくなる部分にこそ、自分の仕事がある。それが誇りになる。」</p>
+      <p class="story-quote-author">— 海老原芳建築 現場職人</p>
+    </div>
+    <p class="story-body reveal">
+      大手ハウスメーカーが規格化した住宅を量産する時代に、私たちは一棟一棟、お客様と向き合いながら家を建てます。お客様の顔を知り、家族構成を知り、生活スタイルを知る。だからこそ、作れるものがある。<strong>職人の手には、そういう「知っている」が宿ります。</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ===== NUMBERS ===== -->
+<section class="numbers-section">
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <div class="reveal"><span style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.35em;color:var(--gold)">OUR PEOPLE</span></div>
+    <h2 style="font-family:'Shippori Mincho',serif;font-size:clamp(22px,3vw,36px);color:var(--white);margin-top:12px;font-weight:700" class="reveal d1">海老原芳建築という「場」の数字</h2>
+  </div>
+  <div class="numbers-grid">
+    <div class="number-card reveal"><div class="number-val">40<small>名</small></div><div class="number-label">在籍スタッフ<br>職人・技術者・事務</div></div>
+    <div class="number-card reveal d1"><div class="number-val">20<small>名</small></div><div class="number-label">現場職人<br>経験豊富なプロが揃う</div></div>
+    <div class="number-card reveal d2"><div class="number-val">6<small>名</small></div><div class="number-label">2級建築士在籍<br>施工管理技士も6名</div></div>
+    <div class="number-card reveal d3"><div class="number-val">2<small>台</small></div><div class="number-label">自社保有 油圧ショベル<br>大型ダンプも2台</div></div>
+  </div>
+</section>
+
+<!-- ===== KEYWORDS ===== -->
+<section class="keyword-section">
+  <div class="reveal"><span style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.4em;color:var(--gold)">WHAT WE VALUE</span></div>
+  <h2 style="font-family:'Shippori Mincho',serif;font-size:clamp(20px,2.5vw,30px);color:var(--white);margin-top:16px;font-weight:700" class="reveal d1">私たちが大切にしていること</h2>
+  <div class="keyword-grid reveal d2">
+    <span class="keyword-tag">誠実な施工</span>
+    <span class="keyword-tag">職人の誇り</span>
+    <span class="keyword-tag">地域への貢献</span>
+    <span class="keyword-tag">愚直であること</span>
+    <span class="keyword-tag">技術の継承</span>
+    <span class="keyword-tag">見えない部分への丁寧さ</span>
+    <span class="keyword-tag">資格の取得支援</span>
+    <span class="keyword-tag">チームで動く現場</span>
+    <span class="keyword-tag">お客様との向き合い方</span>
+  </div>
+</section>
+
+<!-- ===== CHAPTER 2 opener ===== -->
+<div style="padding:96px 24px 56px;text-align:center;background:var(--cream)">
+  <div class="chapter reveal">
+    <span class="chapter-num">CHAPTER 02</span>
+    <h2 class="chapter-title">家族の家を、手で作る仕事。</h2>
+    <div class="chapter-line"></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 2: 家族の家 ===== -->
+<section class="story-section cream">
+  <div class="story-inner">
+    <p class="story-lead reveal">
+      「ありがとう」と言われる仕事。<br>人の暮らしに、直接触れる仕事。
+    </p>
+    <div class="photo-grid reveal">
+      <div class="photo-grid-item"><div class="photo-grid-item-icon">🏠</div>新築工事の様子（準備中）</div>
+      <div class="photo-grid-item"><div class="photo-grid-item-icon">👨‍👩‍👧‍👦</div>お客様との打ち合わせ（準備中）</div>
+    </div>
+    <p class="story-body reveal">
+      新築工事が完成したとき、お客様の顔を思い浮かべながら最後の仕上げをする。引き渡しの日、玄関のドアを初めて開けたご家族の表情——その瞬間のために、この仕事をしています。
+    </p>
+    <p class="story-body reveal">
+      私たちの仕事の多くは、お客様の名前と顔が見えます。「田中さんのリフォーム」「山田さんの新築」——数字の案件管理ではなく、<strong>人の暮らしに名前がついている。</strong>それが、大手との最大の違いだと思っています。
+    </p>
+
+    <div class="story-quote reveal">
+      <p class="story-quote-text">「引き渡しの日に、お子さんが真っ先に自分の部屋に走っていった。あの後ろ姿は忘れられない。」</p>
+      <p class="story-quote-author">— 大工職人 入社8年目</p>
+    </div>
+
+    <p class="story-body reveal">
+      リフォームの現場では、長年住み続けたお宅の歴史を感じることがあります。増改築の跡、昔の職人の仕事の痕跡。<strong>「誰かが誠実に作ったもの」は、時代が変わっても語りかけてくる。</strong>私たちも、そういう仕事をしたい。それだけです。
+    </p>
+
+    <!-- INTERVIEW BLOCK -->
+    <div style="margin-top:72px;padding-top:72px;border-top:1px solid rgba(0,0,0,.1)">
+      <div style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:24px" class="reveal">VOICE — スタッフの声</div>
+
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start;margin-bottom:64px" class="reveal">
+        <div>
+          <div class="photo-ph medium"><div class="photo-ph-icon">👷</div>写真（準備中）</div>
+          <div style="margin-top:16px">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:var(--charcoal)">山田 健一</div>
+            <div style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.15em;color:var(--gold);margin-top:4px">大工職人 / 入社5年目</div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:.06em">Q. 入社前はどんな仕事をしていましたか？</p>
+          <p style="font-family:'Noto Serif JP',serif;font-size:15px;color:var(--silver);line-height:2.1;margin-bottom:24px">全然違う業界で働いていました。毎日パソコンの前に座って、自分が何を作っているのかよくわからなかった。「手で何かを作る仕事がしたい」という気持ちがずっとあって、思い切って転職しました。</p>
+          <p style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:.06em">Q. 未経験で飛び込んで、どうでしたか？</p>
+          <p style="font-family:'Noto Serif JP',serif;font-size:15px;color:var(--silver);line-height:2.1">最初の半年は本当に大変でした。でも先輩たちが丁寧に教えてくれた。「わからないことはすぐ聞け」という雰囲気があって、萎縮せずに仕事を覚えられた。3年目に現場を任されたとき、「やっと来た」と思いましたね。</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start" class="reveal">
+        <div>
+          <div class="photo-ph medium"><div class="photo-ph-icon">📐</div>写真（準備中）</div>
+          <div style="margin-top:16px">
+            <div style="font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:var(--charcoal)">佐藤 真理子</div>
+            <div style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.15em;color:var(--gold);margin-top:4px">施工管理 / 入社3年目</div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:.06em">Q. 施工管理の仕事の魅力は何ですか？</p>
+          <p style="font-family:'Noto Serif JP',serif;font-size:15px;color:var(--silver);line-height:2.1;margin-bottom:24px">現場全体を見渡して、「この工程をどう進めるか」を考える仕事です。職人さんたちと連携して、工期通りに、安全に、品質高く進める。全部がうまく噛み合ったときの達成感は、他の仕事にはないと思います。</p>
+          <p style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:.06em">Q. 会社の雰囲気はどうですか？</p>
+          <p style="font-family:'Noto Serif JP',serif;font-size:15px;color:var(--silver);line-height:2.1">「まじめな人が多い」の一言に尽きます。良い意味でガツガツしてなくて、でも仕事になると誰もが本気になる。そのメリハリが心地よいです。資格取得も会社が応援してくれるので、施工管理技士の勉強も続けられています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHAPTER 3 opener ===== -->
+<div style="padding:96px 24px 56px;text-align:center;background:var(--charcoal)">
+  <div class="chapter reveal">
+    <span class="chapter-num">CHAPTER 03</span>
+    <h2 class="chapter-title white">30年後も残るものを、<br>今日も作っている。</h2>
+    <div class="chapter-line"></div>
+  </div>
+</div>
+
+<!-- ===== SECTION 3: 30年後 ===== -->
+<section class="story-section dark">
+  <div class="story-inner">
+    <p class="story-lead white reveal">
+      建築物は、作った人間よりも<br>長く、この地に残り続ける。
+    </p>
+    <div class="photo-block reveal">
+      <div class="photo-ph wide" style="background:#2a2218;color:#5a5048"><div class="photo-ph-icon">🏗️</div>完成した建物の写真（準備中）</div>
+    </div>
+    <p class="story-body white reveal">
+      私たちが今日作っている家は、<strong style="color:var(--white)">30年後も、50年後も、そこに立っているかもしれない。</strong>その家で子供が育ち、老いた親が最後の時を過ごし、やがて次の世代へと受け継がれていく。建築という仕事の重さは、そこにあります。
+    </p>
+    <p class="story-body white reveal">
+      だから私たちは、壁の中の断熱材の施工を手を抜かない。見えなくなる基礎の配筋を確認する。そういう積み重ねが、<strong style="color:var(--white)">「30年後に信頼されるもの」</strong>になると信じているからです。
+    </p>
+
+    <div class="story-quote dark-bg reveal">
+      <p class="story-quote-text white">「自分が建てた家の前を通るとき、誇らしい気持ちになれる。それが続く限り、この仕事をやっていける。」</p>
+      <p class="story-quote-author">— 海老原芳建築 ベテラン職人</p>
+    </div>
+
+    <p class="story-body white reveal">
+      栃木県下野市という土地で、この会社は地域とともに歩んできました。発注者の顔が見えて、完成した建物が今も地域に建っている。「あの家を建てたのは海老原さんとこだよ」——そういう言葉が、私たちの一番の誇りです。
+    </p>
+    <p class="story-body white reveal">
+      あなたが今日覚えた一つの技術は、何十年か後、後輩に手渡されます。職人の技とは、手から手へと渡り続けるものです。<strong style="color:var(--white)">その連鎖の一部になりませんか。</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="timeline-section">
+  <div style="max-width:760px;margin:0 auto;text-align:center">
+    <div class="reveal"><span style="font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.35em;color:var(--gold)">CAREER PATH</span></div>
+    <h2 style="font-family:'Shippori Mincho',serif;font-size:clamp(22px,3vw,34px);color:var(--charcoal);margin-top:12px;font-weight:700" class="reveal d1">成長のイメージ ——ある職人の軌跡</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"><div class="timeline-dot-year">入社<br>〜6ヶ月</div></div>
+      <div class="timeline-content">
+        <div class="timeline-title">現場の基礎を覚える</div>
+        <div class="timeline-text">先輩職人についてOJT。安全管理・材料の扱い・基本的な施工技術を習得。わからないことはすぐ聞ける職場環境。</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal d1">
+      <div class="timeline-dot"><div class="timeline-dot-year">1〜2<br>年目</div></div>
+      <div class="timeline-content">
+        <div class="timeline-title">部分的な工程を担当</div>
+        <div class="timeline-text">特定の工程を任されるように。自分のペースで技術を深める時期。施工管理技士や建築士の資格勉強を始める人も。</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal d2">
+      <div class="timeline-dot"><div class="timeline-dot-year">3〜5<br>年目</div></div>
+      <div class="timeline-content">
+        <div class="timeline-title">現場を任される</div>
+        <div class="timeline-text">一定の工程・エリアを担当。後輩への指導も始まる。資格取得者も多い時期。技術の幅が大きく広がる。</div>
+      </div>
+    </div>
+    <div class="timeline-item reveal d3">
+      <div class="timeline-dot"><div class="timeline-dot-year">5年<br>以上</div></div>
+      <div class="timeline-content">
+        <div class="timeline-title">プロとして、チームを牽引</div>
+        <div class="timeline-text">施工管理・リーダーとして現場全体を担う。自分のスタイルで仕事ができるようになり、「職人の誇り」が確かなものに。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL MESSAGE ===== -->
+<section class="story-section" style="background:var(--white);border-top:1px solid rgba(0,0,0,.06)">
+  <div class="story-inner" style="text-align:center">
+    <div class="gold-sep reveal"></div>
+    <p class="story-lead reveal" style="text-align:center;font-size:clamp(22px,3vw,36px)">
+      海老原芳建築で働くということは——<br>
+      <em style="color:var(--gold);font-style:normal">誠実に、誇りを持って、<br>この手で何かを作り続けること。</em>
+    </p>
+    <div class="gold-sep reveal"></div>
+    <p class="story-body reveal" style="max-width:640px;margin:0 auto 20px;text-align:left">
+      私たちは大きな会社ではありません。でも、<strong>40名それぞれが顔の見える仕事をしている。</strong>お客様の顔が見えて、完成した建物がこの街に残っていく。そういう仕事の仕方を、ずっと続けてきました。
+    </p>
+    <p class="story-body reveal" style="max-width:640px;margin:0 auto">
+      建築の経験がなくても構いません。「手で作ることへの憧れ」「地元で長く働きたい」「誠実な仕事がしたい」——そんな気持ちがあれば、ぜひ一度話しましょう。<strong>見学・体験入社も歓迎しています。</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ===== ENTRY CTA ===== -->
+<section class="entry-cta">
+  <p class="entry-cta-label reveal">JOIN US — 一緒に働きませんか</p>
+  <h2 class="entry-cta-title reveal d1">あなたの「手」が、<br>栃木の住まいになる。</h2>
+  <p class="entry-cta-sub reveal d2">
+    まずはお気軽にご連絡ください。<br>
+    現地見学・体験入社も随時受け付けています。
+  </p>
+  <a href="tel:0285441064" class="entry-tel reveal d2">0285-44-1064</a>
+  <p class="entry-tel-label reveal d2">受付時間 / 平日 8:00〜17:00</p>
+  <div style="margin:48px 0"></div>
+  <div class="entry-cta-btns reveal d3">
+    <a href="contact.html" class="btn-entry-main">エントリー・お問い合わせ</a>
+    <a href="recruit.html" class="btn-entry-sub">募集要項を見る</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:0">
+          <span class="logo-en">EBIHARAYOSHI KENCHIKU</span>
+          <span class="logo-ja">有限会社 海老原芳建築</span>
+          <span class="logo-bar"></span>
+        </a>
+        <p class="footer-desc">栃木県下野市を拠点に、新築・増改築・リフォーム・店舗建築など一般建築工事全般に対応。施工管理技士・2級建築士在籍の確かな技術力で、地域の住まいと暮らしを支えています。</p>
+        <address class="footer-address">〒329-0433 栃木県下野市緑１−３−３<br>TEL: 0285-44-1064　代表者: 海老原 俊夫</address>
+      </div>
+      <div>
+        <div class="footer-col-title">SERVICES</div>
+        <ul class="footer-links">
+          <li><a href="service.html">新築工事</a></li>
+          <li><a href="service.html">増改築・リフォーム</a></li>
+          <li><a href="service.html">店舗・商業施設</a></li>
+          <li><a href="service.html">外構・エクステリア</a></li>
+          <li><a href="service.html">解体・土工事</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">PAGES</div>
+        <ul class="footer-links">
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="service.html">施工案内</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="recruit_story.html">求職者のみなさまへ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 有限会社海老原芳建築. All Rights Reserved.</p>
+      <p class="footer-copy">〒329-0433 栃木県下野市緑１−３−３</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ナビゲーション */
+const ham=document.getElementById('hamburger');
+const mNav=document.getElementById('mobileNav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mNav.classList.toggle('open');
+  document.body.style.overflow=mNav.classList.contains('open')?'hidden':'';
+});
+function closeMenu(){ham.classList.remove('open');mNav.classList.remove('open');document.body.style.overflow='';}
+
+/* スクロールアニメーション */
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
+},{threshold:.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+
+/* プログレスバー */
+const fill=document.getElementById('progressFill');
+window.addEventListener('scroll',()=>{
+  const scrollTop=window.scrollY;
+  const docH=document.documentElement.scrollHeight-window.innerHeight;
+  fill.style.width=(scrollTop/docH*100)+'%';
+});
+</script>
+</body>
+</html>

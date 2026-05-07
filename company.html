@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | 有限会社海老原芳建築 | 栃木県下野市</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#C49A3C;--gold-l:#D4AA50;--gold-d:#9A7828;--brown:#3D2B1F;--brown-d:#271A10;--black:#0E0E0E;--charcoal:#1A1410;--iron:#2C2218;--silver:#8A7E72;--silver-l:#B8A898;--silver-p:#E8E0D5;--cream:#F4F0EA;--white:#FFFDF8;--border:rgba(196,154,60,0.22)}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
+.fade-up.visible{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(20,14,10,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;gap:2px}
+.logo-en{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--gold);letter-spacing:.12em}
+.logo-ja{font-size:10px;color:var(--silver-l);letter-spacing:.18em}
+.logo-bar{width:32px;height:2px;background:var(--gold);margin-top:4px}
+nav.pc-nav a{font-size:12px;color:rgba(255,255,255,0.7);padding:8px 12px;border-radius:2px;letter-spacing:.06em;transition:color .2s,background .2s;white-space:nowrap}
+nav.pc-nav a:hover,nav.pc-nav a.active{color:var(--gold);background:rgba(196,154,60,0.1)}
+nav.pc-nav{display:flex;gap:0}
+.header-cta{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.header-tel{font-family:'Oswald',sans-serif;font-size:17px;color:var(--white);letter-spacing:.06em;line-height:1}
+.header-tel span{font-size:10px;font-family:'Noto Sans JP',sans-serif;display:block;color:var(--silver-l);letter-spacing:.1em;margin-bottom:2px}
+.btn-primary{background:var(--gold);color:var(--black);font-size:12px;font-weight:700;padding:10px 18px;border-radius:2px;letter-spacing:.08em;transition:background .2s;white-space:nowrap}
+.btn-primary:hover{background:var(--gold-l)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,7,4,.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:18px;color:var(--white);letter-spacing:.12em;transition:color .2s}
+.mobile-nav a:hover{color:var(--gold)}
+.page-hero{margin-top:72px;background:linear-gradient(135deg,var(--brown-d) 0%,#1c1008 100%);padding:80px 24px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(196,154,60,0.1) 1px,transparent 1px);background-size:32px 32px}
+.page-hero-inner{max-width:1160px;margin:0 auto;position:relative}
+.page-hero-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.page-hero-label::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+.page-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,4vw,48px);color:var(--white);font-weight:700;margin-bottom:12px}
+.page-hero-sub{font-size:15px;color:rgba(255,255,255,0.6)}
+.breadcrumb{margin-top:24px;display:flex;gap:8px;align-items:center}
+.breadcrumb a,.breadcrumb span{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:.05em;transition:color .2s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb .sep{color:rgba(255,255,255,0.2)}
+.section{padding:96px 24px}
+.section.bg-cream{background:var(--cream)}
+.section-inner{max-width:1160px;margin:0 auto}
+.section-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.28em;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::before{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+.section-title{font-family:'Noto Serif JP',serif;font-size:clamp(24px,3vw,36px);color:var(--charcoal);font-weight:700;margin-bottom:40px;line-height:1.35}
+/* PROFILE TABLE */
+.profile-table{width:100%;border-collapse:collapse}
+.profile-table tr{border-bottom:1px solid rgba(0,0,0,.08)}
+.profile-table th{font-size:13px;font-weight:700;color:var(--charcoal);width:200px;padding:20px 0;vertical-align:top;letter-spacing:.04em}
+.profile-table td{font-size:14px;color:var(--silver);padding:20px 16px;line-height:1.8}
+/* PHILOSOPHY */
+.phil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
+.phil-card{background:var(--iron);padding:36px 28px}
+.phil-card-num{font-family:'Oswald',sans-serif;font-size:32px;font-weight:700;color:var(--gold-d);opacity:.7;margin-bottom:16px}
+.phil-card-title{font-family:'Noto Serif JP',serif;font-size:17px;color:var(--white);font-weight:700;margin-bottom:12px}
+.phil-card-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.9}
+/* MESSAGE */
+.message-section{padding:96px 24px;background:var(--cream)}
+.message-inner{max-width:1160px;margin:0 auto}
+.message-grid{display:grid;grid-template-columns:1fr 2fr;gap:72px;align-items:start;margin-top:48px}
+.message-photo{width:100%;height:360px;background:#d0c8bc;display:flex;align-items:center;justify-content:center;color:#888;font-size:14px}
+.message-name{font-family:'Noto Serif JP',serif;font-size:22px;color:var(--charcoal);font-weight:700;margin-bottom:4px}
+.message-title{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.2em;color:var(--gold);margin-bottom:28px}
+.message-body p{font-size:15px;color:var(--silver);line-height:2.1;margin-bottom:20px}
+/* ACCESS */
+.access-section{padding:96px 24px;background:var(--charcoal)}
+.access-inner{max-width:1160px;margin:0 auto}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:60px}
+.access-info th{font-size:12px;font-weight:700;color:var(--white);width:100px;padding:12px 0;vertical-align:top}
+.access-info td{font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8}
+.access-info tr{border-bottom:1px solid rgba(196,154,60,.12)}
+.map-embed{width:100%;height:360px;border:none;filter:grayscale(20%);background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#555;font-size:14px}
+.cta-band{background:var(--brown-d);padding:72px 24px;text-align:center;border-top:1px solid var(--border)}
+.cta-band-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,2.5vw,28px);color:var(--white);font-weight:700;margin-bottom:12px}
+.cta-band-sub{font-size:14px;color:rgba(255,255,255,.55);margin-bottom:32px;line-height:1.8}
+.cta-band-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:var(--black);font-size:13px;font-weight:700;padding:14px 36px;border-radius:2px;letter-spacing:.1em;transition:background .2s}
+.btn-gold:hover{background:var(--gold-l)}
+.btn-outline-w{border:1px solid rgba(255,255,255,0.4);color:var(--white);font-size:13px;padding:13px 36px;border-radius:2px;letter-spacing:.1em;transition:border-color .2s}
+.btn-outline-w:hover{border-color:var(--gold);background:rgba(196,154,60,.1)}
+footer{background:var(--black);border-top:1px solid var(--border);padding:72px 24px 40px}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:56px}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.45);line-height:2;margin:16px 0 20px}
+address.footer-address{font-size:12px;color:rgba(255,255,255,.4);line-height:2;font-style:normal}
+.footer-col-title{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.25em;color:var(--gold);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.45);transition:color .2s;letter-spacing:.04em}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.25);letter-spacing:.06em}
+@media(max-width:1024px){nav.pc-nav{display:none}.header-tel{display:none}.hamburger{display:flex}.phil-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:768px){.message-grid{grid-template-columns:1fr}.access-grid{grid-template-columns:1fr}.phil-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-en">EBIHARAYOSHI KENCHIKU</span><span class="logo-ja">有限会社 海老原芳建築</span><span class="logo-bar"></span></a>
+    <nav class="pc-nav">
+      <a href="service.html">施工案内</a><a href="works.html">施工実績</a><a href="company.html" class="active">会社概要</a><a href="recruit.html">採用情報</a><a href="recruit_story.html">求職者のみなさまへ</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:0285441064" class="header-tel"><span>お気軽にご相談ください</span>0285-44-1064</a>
+      <a href="contact.html" class="btn-primary">無料相談</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="service.html" onclick="closeMenu()">施工案内</a><a href="works.html" onclick="closeMenu()">施工実績</a><a href="company.html" onclick="closeMenu()">会社概要</a><a href="recruit.html" onclick="closeMenu()">採用情報</a><a href="recruit_story.html" onclick="closeMenu()">求職者のみなさまへ</a><a href="contact.html" onclick="closeMenu()">お問い合わせ</a>
+  <a href="tel:0285441064" style="color:var(--gold);font-family:'Oswald',sans-serif;font-size:22px;">0285-44-1064</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">COMPANY</div>
+    <h1>会社概要</h1>
+    <p class="page-hero-sub">下野市に根ざした建築会社としての歩みをご紹介します</p>
+    <nav class="breadcrumb"><a href="index.html">TOP</a><span class="sep">›</span><span>会社概要</span></nav>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">COMPANY PROFILE</div>
+    <h2 class="section-title">会社情報</h2>
+    <table class="profile-table fade-up">
+      <tr><th>会社名</th><td>有限会社 海老原芳建築</td></tr>
+      <tr><th>英語表記</th><td>EBIHARAYOSHI KENCHIKU Co., Ltd.</td></tr>
+      <tr><th>代表者</th><td>海老原 俊夫</td></tr>
+      <tr><th>所在地</th><td>〒329-0433 栃木県下野市緑１−３−３</td></tr>
+      <tr><th>電話番号</th><td><a href="tel:0285441064" style="color:var(--gold)">0285-44-1064</a></td></tr>
+      <tr><th>事業内容</th><td>一般建築工事全般（新築・増改築・リフォーム・店舗建築・外構・解体工事）</td></tr>
+      <tr><th>従業員数</th><td>40名（職人20名・営業職員10名・事務職員10名）</td></tr>
+      <tr><th>在籍資格者</th><td>施工管理技士 6名 ／ 2級建築士 6名</td></tr>
+      <tr><th>保有機械</th><td>油圧ショベル 2台 ／ 大型ダンプ車両 2台</td></tr>
+      <tr><th>許可・認証</th><td>建設業許可取得 ／ インボイス登録 ／ 社会保険・労災保険加入</td></tr>
+      <tr><th>最寄り駅</th><td>JR宇都宮線 自治医大駅 徒歩約10分（730m）</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section style="background:var(--charcoal);padding:96px 24px">
+  <div class="section-inner">
+    <div class="section-label" style="color:var(--gold)">PHILOSOPHY</div>
+    <h2 class="section-title" style="color:var(--white)">経営理念</h2>
+    <div class="phil-grid">
+      <div class="phil-card fade-up">
+        <div class="phil-card-num">01</div>
+        <div class="phil-card-title">誠実・丁寧な施工</div>
+        <div class="phil-card-desc">見えない部分にも手を抜かない、愚直なまでの誠実さ。それが海老原芳建築の根本です。工事品質と仕上がりのきれいさにとことんこだわります。</div>
+      </div>
+      <div class="phil-card fade-up d1">
+        <div class="phil-card-num">02</div>
+        <div class="phil-card-title">地域とともに歩む</div>
+        <div class="phil-card-desc">栃木県下野市という地域に根ざし、地元の住まいと暮らしを守る存在であり続けること。地域密着の対応力と迅速な動きが私たちの強みです。</div>
+      </div>
+      <div class="phil-card fade-up d2">
+        <div class="phil-card-num">03</div>
+        <div class="phil-card-title">技術と信頼の継承</div>
+        <div class="phil-card-desc">有資格者によるプロの技術を次世代へ。施工管理技士・建築士が在籍し、安心・安全な建築を提供し続けることで、地域からの信頼を積み上げます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section class="message-section">
+  <div class="message-inner">
+    <div class="section-label">MESSAGE</div>
+    <h2 class="section-title">代表メッセージ</h2>
+    <div class="message-grid">
+      <div class="fade-up">
+        <div class="message-photo">代表者写真<br>（準備中）</div>
+      </div>
+      <div class="fade-up d1">
+        <div class="message-name">海老原 俊夫</div>
+        <div class="message-title">代表 / REPRESENTATIVE</div>
+        <div class="message-body">
+          <p>弊社は栃木県下野市を拠点に、一般建築工事全般を手がけてまいりました。新築・増改築・リフォーム・店舗建築と、建物に関するあらゆるご要望にお応えできる体制を整えております。</p>
+          <p>私たちが最も大切にしているのは、「誠実さ」です。工事品質はもちろん、お客様とのコミュニケーションにおいても、丁寧で正直な対応を心がけています。「まじめで愚直、でも臨機応変に」という姿勢が、お客様からのご評価につながっていると感じております。</p>
+          <p>施工管理技士・2級建築士を含む40名体制で、設計から施工・引き渡しまで責任を持って対応いたします。建築のことなら、どうぞお気軽にご相談ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="access-section">
+  <div class="access-inner">
+    <div class="section-label" style="color:var(--gold)">ACCESS</div>
+    <h2 class="section-title" style="color:var(--white)">アクセス</h2>
+    <div class="access-grid">
+      <div class="fade-up">
+        <table class="access-info" style="width:100%;border-collapse:collapse">
+          <tr><th style="font-size:12px;font-weight:700;color:var(--white);width:80px;padding:12px 0;vertical-align:top;border-bottom:1px solid rgba(196,154,60,.12)">会社名</th><td style="font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8;border-bottom:1px solid rgba(196,154,60,.12)">有限会社 海老原芳建築</td></tr>
+          <tr><th style="font-size:12px;font-weight:700;color:var(--white);padding:12px 0;vertical-align:top;border-bottom:1px solid rgba(196,154,60,.12)">住所</th><td style="font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8;border-bottom:1px solid rgba(196,154,60,.12)">〒329-0433<br>栃木県下野市緑１−３−３</td></tr>
+          <tr><th style="font-size:12px;font-weight:700;color:var(--white);padding:12px 0;vertical-align:top;border-bottom:1px solid rgba(196,154,60,.12)">TEL</th><td style="font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8;border-bottom:1px solid rgba(196,154,60,.12)"><a href="tel:0285441064" style="color:var(--gold)">0285-44-1064</a></td></tr>
+          <tr><th style="font-size:12px;font-weight:700;color:var(--white);padding:12px 0;vertical-align:top;border-bottom:1px solid rgba(196,154,60,.12)">最寄り駅</th><td style="font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8;border-bottom:1px solid rgba(196,154,60,.12)">JR宇都宮線 自治医大駅<br>徒歩約10分（730m）</td></tr>
+          <tr><th style="font-size:12px;font-weight:700;color:var(--white);padding:12px 0;vertical-align:top">営業時間</th><td style="font-size:13px;color:var(--silver-l);padding:12px 0 12px 12px;line-height:1.8">平日 8:00〜17:00</td></tr>
+        </table>
+      </div>
+      <div class="fade-up d1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.1!2d139.8611!3d36.3946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f6e3b5cfe5a73%3A0x1!2z5qCq5byP5Lya56S-5rW35rqR6Iqx5bu66Ic!5e0!3m2!1sja!2sjp!4v1" class="map-embed" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-band-title">建築のご相談はお気軽に</div>
+  <p class="cta-band-sub">現地調査・お見積もりは無料です。まずはお電話またはメールにてお問い合わせください。</p>
+  <div class="cta-band-btns">
+    <a href="contact.html" class="btn-gold">メールで相談する</a>
+    <a href="tel:0285441064" class="btn-outline-w">📞 0285-44-1064</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:0"><span class="logo-en">EBIHARAYOSHI KENCHIKU</span><span class="logo-ja">有限会社 海老原芳建築</span><span class="logo-bar"></span></a>
+        <p class="footer-desc">栃木県下野市を拠点に、新築・増改築・リフォーム・店舗建築など一般建築工事全般に対応。施工管理技士・2級建築士在籍の確かな技術力で、地域の住まいと暮らしを支えています。</p>
+        <address class="footer-address">〒329-0433 栃木県下野市緑１−３−３<br>TEL: 0285-44-1064　代表者: 海老原 俊夫</address>
+      </div>
+      <div>
+        <div class="footer-col-title">SERVICES</div>
+        <ul class="footer-links">
+          <li><a href="service.html">新築工事</a></li><li><a href="service.html">増改築・リフォーム</a></li><li><a href="service.html">店舗・商業施設</a></li><li><a href="service.html">外構・エクステリア</a></li><li><a href="service.html">解体・土工事</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">PAGES</div>
+        <ul class="footer-links">
+          <li><a href="index.html">TOP</a></li><li><a href="service.html">施工案内</a></li><li><a href="works.html">施工実績</a></li><li><a href="company.html">会社概要</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="recruit_story.html">求職者のみなさまへ</a></li><li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 有限会社海老原芳建築. All Rights Reserved.</p>
+      <p class="footer-copy">〒329-0433 栃木県下野市緑１−３−３</p>
+    </div>
+  </div>
+</footer>
+<script>
+const ham=document.getElementById('hamburger');const mNav=document.getElementById('mobileNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mNav.classList.toggle('open');document.body.style.overflow=mNav.classList.contains('open')?'hidden':''});
+function closeMenu(){ham.classList.remove('open');mNav.classList.remove('open');document.body.style.overflow=''}
+const obs=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
